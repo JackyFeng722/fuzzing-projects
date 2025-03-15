@@ -1,7 +1,5 @@
-# UniBench
-20 benchmark programs
-
-If you are going to fuzz these programs, checkout our [Dockerfile repo](https://github.com/unifuzz/unibench_build) for building with fuzzers!
+# 模糊测试-目标程序
+20个基准程序
 
 ## Structed Data (id, prog, commandline, seed_folder)
 
@@ -50,7 +48,7 @@ data = [
 
 ## Audio
 
-Attention: running mp3gain may change the input file, **make a copy of your crash files before validating**, otherwise you may not be able to reproduce crashes.
+注意：运行mp3gain可能会改变输入文件，**在验证**之前**复制你的崩溃文件，否则你可能无法重现崩溃。
 
 | Program | Version        | Official Website                | Get Latest                                                   | Issue                                                      | Fuzzing Arguments                              | CVE link                                                     |
 | ------- | -------------- | ------------------------------- | ------------------------------------------------------------ | ---------------------------------------------------------- | ---------------------------------------------- | ------------------------------------------------------------ |
@@ -68,7 +66,7 @@ Attention: running mp3gain may change the input file, **make a copy of your cras
 
 ## Text
 
-Note: infotocap is actually binary `tic`, the name **infotocap** should not be changed. This is like busybox, which functionality is determined by its binary name
+注意：infotocap实际上是二进制‘ tic ’，名称**infotocap**不应更改。这类似于busybox，其功能由其二进制名称决定
 
 | Program   | Version      | Official Website                      | Get Latest                                            | Issue                                                        | Fuzzing Arguments | CVE link                                                     |
 | --------- | ------------ | ------------------------------------- | ----------------------------------------------------- | ------------------------------------------------------------ | ----------------- | ------------------------------------------------------------ |
